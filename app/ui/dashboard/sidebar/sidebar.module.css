@@ -1,0 +1,96 @@
+.container {
+  position: sticky;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobileMenuBtn {
+  display: none;
+}
+
+.userImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.userTitle {
+  font-size: 12px;
+  color: var(--textSoft);
+}
+
+.list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.cat {
+  color: var(--textSoft);
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+
+.logout {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #2e374a;
+}
+
+@media screen and (max-width: 1350px) {
+  .list {
+    display: none;
+  }
+
+  .listOpen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logout {
+    display: none;
+  }
+
+  .logoutOpen {
+    display: flex;
+  }
+
+  .mobileMenuBtn {
+    display: block;
+    font-size: 40px;
+    margin-right: 20px;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+}
